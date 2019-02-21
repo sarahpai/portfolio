@@ -15,10 +15,10 @@ class NavBar extends React.Component {
 				<Menu>
 					<Container>
 						<Menu.Item as="a" header>
-							<Image
+							{/* <Image
 							size="small"
 							src="https://pbs.twimg.com/profile_images/960980981892214785/KaSVZO2q_400x400.jpg"
-							/>
+							/> */}
 						</Menu.Item>
 
 						<Menu.Menu position="right">

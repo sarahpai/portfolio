@@ -1,0 +1,133 @@
+/* .about {
+
+margin-top: 30px;
+color: rgb(103, 102, 102);
+text-transform: uppercase;
+letter-spacing: 3px;
+padding: 3px;
+font: bold 13px arial,sans-serif;
+float: right;
+}
+
+.work {
+writing-mode: vertical-rl;
+text-orientation: sideways;
+margin-top: 120px;
+color: rgb(103, 102, 102);
+text-transform: uppercase;
+letter-spacing: 3px;
+padding: 3px;
+font: bold 13px arial,sans-serif;
+float: right;
+} */
+/* 
+.vl {
+	position:fixed;
+	right: 40px;
+    width:5px;
+    background-color:#000;
+    top:0;
+    bottom:0;
+    height: 500px;
+} */
+
+.wrapper {
+    position: relative;
+    /* width: auto; */
+    height: 300px;
+    margin: 20px;
+   /* right: 0; */
+   padding-top: 50px;
+   padding-right: 100px;
+   padding-left: 30px;
+  
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+.wrapper::after {
+    content: "";
+	clear: both;
+	display: table;
+}
+
+.line {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #ccc;
+    z-index: 1;
+   
+    
+}
+
+.wordwrapper {
+    text-align: center;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -12px;
+    z-index: 2;
+    
+}
+
+.word {
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px;
+    font: bold 12px arial,sans-serif;
+    background: #fff;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+}
+
+@media screen and (max-width: 500px) {
+	.column {
+	  width: 100%;
+	}
+  }
+
+/* .scrollbar {
+    background-color: #F5F5F5;
+    float: left;
+    height: 300px;
+    margin-bottom: 25px;
+    margin-left: 22px;
+    margin-top: 40px;
+    width: 65px;
+    overflow-y: scroll;
+}
+
+.force-overflow {
+    min-height: 450px;
+} */
+
+/* width , background of the bar itself*/
+/* ::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+    padding-left: 40px;
+} */
+
+  /* Track  empty space "below" process bar */
+/* ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    height: 50px;
+  }
+    */
+  /* Handle */
+ /* ::-webkit-scrollbar-thumb {
+    background: rgb(23, 23, 23); 
+  }
+   */
+  /* Handle on hover */
+ /* ::-webkit-scrollbar-thumb:hover {
+    background: rgb(2, 81, 131); 
+  } */

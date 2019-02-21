@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import NavBar from './Component/navbar';
 import Homepage from './Component/Homepage';
-import './css/app.css'
+import Menubar from './Component/menubar';
 class App extends Component {
  
   render() {
     return (
       <>
-        <NavBar />
-        <Homepage />
+        <Menubar />
+        {/* <Homepage /> */}
       </>
     )
   }
