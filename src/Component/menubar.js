@@ -39,6 +39,7 @@ class Menubar extends React.Component {
 						<article>
 							<span>HELLO!</span>
 							<p>scroll to see my work</p>
+							<i class="fas fa-angle-double-down"></i>
 						</article>
 					</div>
 					<div className="column-two">
@@ -47,16 +48,7 @@ class Menubar extends React.Component {
 						</article>
 					</div>
 				</section>
-				
-				<div className="wrapper">
-					<div className="line">
-						<div className="wordwrapper">
-							<a className="word">
-							ABOUT
-							</a> 
-						</div>
-					</div>
-				</div>
+		
 			
 			
 			
