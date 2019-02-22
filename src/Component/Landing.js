@@ -1,9 +1,6 @@
 import React from 'react';
-import '../assets/css/menubar.css'
-import computer from '../assets/images/computer-placeholder.jpg'
-import drawing from '../assets/images/drawing-placeholder.jpg'
-
-class Menubar extends React.Component {
+import '../assets/css/landing.css'
+class landing extends React.Component {
 
 	render() {
 		return (
@@ -37,23 +34,16 @@ class Menubar extends React.Component {
 					  </div>
 					</div> */}
 						<article>
-							<span>HELLO!</span>
+							<span>Hello!</span>
 							<p>scroll to see my work</p>
 							<i class="fas fa-angle-double-down"></i>
 						</article>
 					</div>
 					<div className="column-two">
-						<article>
-					
-						</article>
 					</div>
 				</section>
-		
-			
-			
-			
 				</>
 		)
 	}
 }
-export default Menubar
+export default landing

@@ -34,7 +34,6 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     padding: 3px;
-    font: bold 12px arial,sans-serif;
     background: #fff;
     writing-mode: vertical-rl;
     text-orientation: sideways;
@@ -46,18 +45,23 @@
     left: 90%;
     z-index: inherit;
 }
+
 span {
     font-family: 'Bowlby One SC', cursive;
 	font-size: 9rem;
 	text-align: center;
 	line-height: 150%;
-	color: rgb(227, 119, 4);
+  color: rgb(227, 119, 4);
+  letter-spacing: 4px;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
 }
 
 section {
   width: 100%;
-  height: 100vh;
-  
+  height: 100vh; 
 }
 
 article {
