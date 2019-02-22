@@ -1,26 +1,19 @@
-body {
- color: rgb(139, 212, 212);
-}
 
-.column {
-float: left;
-width: 50%;
-}
-
-.row {
+/* 
+article {
 	padding-top: 50px;
     padding-right: 100px;
     padding-left: 30px;
 }
 
-.row::after {
+article::after {
 	content: "";
 	clear: both;
 	display: table;
 }
 
 @media screen and (max-width: 500px) {
-	.column {
+	.article {
 	  width: 100%;
 	}
-  }
+  } */
