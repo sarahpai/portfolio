@@ -51,7 +51,7 @@ const handleClick = (event) => {
 				)
 				break;
 			case "yelpntable":
-				selectedFrame = aliFrame
+				// selectedFrame = aliFrame
 				break;
 			default:
 						selectedFrame = "minion"
