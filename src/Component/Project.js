@@ -7,35 +7,50 @@ import yelpntable from '../assets/images/yelpntable.png'
 
 
 const handleClick = (event) => {
-	console.log(event.target)
+
+
 	// Get the modal
-	var modal = document.getElementById('myModal');
-	// console.log(modal);
+	// var modal = document.getElementById('myModal');
+	// // console.log(modal);
 
-	// Get the <span> element that closes the modal
-	var span = document.getElementsByClassName("close")[0];
+	// // Get the <span> element that closes the modal
+	// var span = document.getElementsByClassName("close")[0];
 
-	// When the user clicks on the button, open the modal 
-	modal.style.display = "block";
+	// // When the user clicks on the button, open the modal 
+	// modal.style.display = "block";
 
 	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {
-		modal.style.display = "none";
-	}
+	// span.onclick = function() {
+	// 	modal.style.display = "none";
+	// }
 
 	// When the user clicks anywhere outside of the modal, close it
+	// window.onclick = function(event) {
+	// 	if (event.target === modal) {
+	// 		modal.style.display = "none";
+	// 	}
+	// }
+
+	console.log(event.target.name);
+	let selectedFrame;
+	var modal = document.getElementById('myModal');
+	var span = document.getElementsByClassName("close")[0];
+	modal.style.display = "block";
+	
+	span.onclick = function () {
+		modal.style.display = "none";
+	}
 	window.onclick = function(event) {
 		if (event.target === modal) {
 			modal.style.display = "none";
 		}
 	}
-
-	console.log(event.target.name);
-		let selectedFrame;
 		switch (event.target.name) {
+			
 			case "youtube":
 				return (
 					<>
+					
 					<p id="header">YOUTUBE KARAOKE </p>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/WXLtqoH3BVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</>
@@ -54,7 +69,7 @@ const handleClick = (event) => {
 				// selectedFrame = aliFrame
 				break;
 			default:
-						selectedFrame = "minion"
+				selectedFrame = ""
 				} console.log("frame selected", selectedFrame)
 		}
 		  

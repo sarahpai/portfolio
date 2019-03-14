@@ -1,6 +1,10 @@
 import React from 'react'
-import { Container, Image, Menu } from 'semantic-ui-react';
-
+import '../assets/css/navbar.css'
+import about from './About'
+// import landing from './Landing'
+import contact from './Contact'
+import project from './Project'
+import { Link } from 'react-router-dom'
 class NavBar extends React.Component {
 
 	state = { activeItem: 'about' }
@@ -8,35 +12,15 @@ class NavBar extends React.Component {
 	handleItemClick = (e, { name }) => this.setState({ activeItem: name })
   
 	render() {
-		 const { activeItem } = this.state
+		//  const { activeItem } = this.state
 
 		return (
 			<>
-				<Menu>
-					<Container>
-						<Menu.Item as="a" header>
-							{/* <Image
-							size="small"
-							src="https://pbs.twimg.com/profile_images/960980981892214785/KaSVZO2q_400x400.jpg"
-							/> */}
-						</Menu.Item>
-
-						<Menu.Menu position="right">
-							<Menu.Item as="a" name="about">
-							about
-							</Menu.Item>
-
-							<Menu.Item as="a" name="Work">
-							Work
-							</Menu.Item>
-												
-							<Menu.Item as="a" name="Blog">
-							Blog
-							</Menu.Item>
-						
-						</Menu.Menu>
-					</Container>
-				</Menu>
+					<div className="navbar">
+						<span className="menu"><Link to={about}>About</Link></span> 
+						<span className="menu"><Link to={project}>Project</Link></span> 
+						<span className="menu"><Link to={contact}>Contact</Link></span> 
+					</div>
 			</>
 	)
 }

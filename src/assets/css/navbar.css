@@ -1,0 +1,15 @@
+.navbar {
+	text-align: right;
+	padding: 10px;
+}
+
+.menu {
+	padding-left: 10px;
+}
+
+.toolbar {
+	position: fixed;
+
+	width: 100%;
+
+}

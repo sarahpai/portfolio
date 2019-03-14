@@ -5,6 +5,7 @@ class landing extends React.Component {
 	render() {
 		return (
 			<>
+				
 				<section className="row">
 					<div className="column-one">
 						<a href="www.linkedin.com/in/sarahpai">
@@ -34,7 +35,7 @@ class landing extends React.Component {
 					  </div>
 					</div> */}
 						<article>
-							<span>Hello!~</span>
+							<span className="title">Hello!</span>
 							<p>scroll to see my work</p>
 							<i class="fas fa-angle-double-down"></i>
 						</article>
