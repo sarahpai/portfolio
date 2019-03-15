@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+// import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import NavBar from './Component/navbar';
 import Landing from './Component/Landing';
@@ -10,20 +10,20 @@ class App extends Component {
  
   render() {
     return (
-      <>
-        	<Router>
+
+        	// <Router>
             <React.Fragment>
-              <NavBar />
+              {/* <NavBar /> */}
               <Landing />
               <About />
               <Project />
               <Contact /> 
-              <Route exact path="/" component={App} />
-              <Route path="/" component={Landing} />
+              {/* <Route exact path="/" component={App} />
+              <Route path="/" component={Landing} /> */}
             </React.Fragment>
 
-          </Router>
-      </>
+          // </Router>
+     
     )
   }
 }
