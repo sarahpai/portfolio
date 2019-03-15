@@ -8,7 +8,7 @@ class About extends React.Component {
 		return (
 			<>
 				<section className="container">
-					<span id="header">ABOUT ME</span>
+					<span id="header">ABOUT ME!!!</span>
 					<div className="page-wrap">
 						<img src={pfpic} alt="profile pic"></img>
 						<p id="description">
