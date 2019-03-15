@@ -35,7 +35,9 @@ class landing extends React.Component {
 					  </div>
 					</div> */}
 						<article>
+
 							<span className="title">Hello!</span>
+
 							<p>scroll to see my work</p>
 							<i class="fas fa-angle-double-down"></i>
 						</article>
