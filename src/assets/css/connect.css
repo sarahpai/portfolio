@@ -1,3 +1,95 @@
 .form {
+	position: relative;
+	margin-left: 50%;
+	top: 28vh;
+	background-color:  rgb(234,172,171);
+	width: 500px;
+	height: 400px;
+	text-align: center;
+}
+
+#square {
+	background-color:rgb(235,235,235);
+	width: 500px;
+	height: 80vh;
+	position: absolute;
 	margin-left: 40%;
+	margin-top: 5%;
+}
+#square2 {
+	background-color:rgb(116, 114, 114);
+	width: 500px;
+	height: 30vh;
+	position: absolute;
+	margin-left: 60%;
+	margin-top: 30%;
+}
+
+#location {
+	position: absolute;
+	left: 53%;
+	margin: 0;
+	top: 0;
+	margin-top: 40vh;
+	font-size: 1.5em;
+	color: white;
+}
+
+article p {
+	padding-top: 10px;
+}
+
+article h6 {
+	margin-top: 20px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-size: .6em;
+	font-weight: 800;
+	letter-spacing: .3em;
+}
+#email {
+	position: absolute;
+	left: 69%;
+	margin: 0;
+	top: 0;
+	margin-top: 40vh;
+	font-size: 1.5em;
+	color: white;
+}
+
+#resume {
+	position: absolute;
+	left: 53%;
+	margin: 0;
+	top: 0;
+	margin-top: 60vh;
+	font-size: 1.5em;
+	color: white;
+}
+
+#csv {
+	margin: 0;
+	color: white;
+}
+
+#csv:hover {
+	text-decoration: underline;
+}
+
+#social-media-icon {
+	position: absolute;
+	left: 69%;
+	top: 0;
+	margin-top: 62.5vh;
+	font-size: 1.5em;
+	color: white;
+}
+
+#social-media-icon h6 {
+	padding-bottom: 10px;
+}
+
+#social-media {
+	color: white;
+	margin: 0;
 }

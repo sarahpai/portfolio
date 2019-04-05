@@ -7,11 +7,25 @@
 #tech-header {
 	font-family: "BebasNeue-Bold";
 	font-size: 50pt;
+
 }
 
-/* #background {
-	background-color: rgb(254, 254, 254);
-} */
+#background {
+	background-image: url('../images/profilepic.jpg');
+	/* width: 100%; */
+	background-position: 50% 50%;
+	/* overflow: hidden; */
+	background-size: contain;
+	background-repeat: repeat-x;
+	height: 100vh;
+	/* width: 100%; */
+	/* height: 100vh; */
+	/* position: relative; */
+	/* z-index: 10; */
+	/* overflow: hidden; */
+	/* background-color:  rgb(116, 114, 114); */
+	/* background-image: url('../images/palm-leaves-palm-trees-sky-454865.jpg') */
+}
 
 /* .container {
 	border-bottom: 1px solid #f1f1f1;
@@ -22,13 +36,23 @@
 	height: 460px;
 } */
 
+.box-wrapper {
+	margin-left: 70% !important;
+	padding: 30px;
+	margin: 30px;
+	text-align: center;
+	background-color: rgba(184, 184, 184, 0.331);
+	
+}
 
 #profile-pic {
-	width: 60vh;
-	margin-left: 50vw;
-	margin-top: 2vh;
-	border-radius: 20px;
+	width: 100%;
+	/* margin-left: 50vw; */
+	/* margin-top: 2vh; */
+	/* border-radius: 10%; */
 	overflow: hidden;
+	/* position: absolute; */
+	background-image: url('../images/profilepic.jpg')
 }
 
 #description {

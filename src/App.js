@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 
 // import NavBar from './Component/navbar';
 import About from './Component/About';
@@ -15,9 +15,10 @@ class App extends Component {
       <Router>
         <>
           <div className="navbar">
-            <Link to={"/about"} className="menu"> About </Link>
+          <Link to={"/about"} className="menu"> About </Link>
             <Link to={"/project"} className="menu"> Project </Link>
-            <Link to={"/connect"} className="menu"> Connect </Link>
+            <Link to={"/connect"} className="menu"> Connect </Link>    
+
             <div id="menu-mobile">
               <hr id="hamburger"></hr>
               <hr id="hamburger"></hr>
@@ -31,20 +32,10 @@ class App extends Component {
           <hr id="underline"></hr>
 				
             <div id="footer">
-              <span>
-                <a href="www.linkedin.com/in/sarahpai">
-                  <i id="social-media" className="fab fa-linkedin-in fa-2x"></i>
-                </a>
-                <a href="www.medium.com/paisarah89">
-                  <i id="social-media" class="fab fa-medium-m fa-2x"></i>
-                </a>
-                <a href="www.github.com/sarahpai">
-                  <i id="social-media" class="fab fa-github fa-2x"></i>
-                </a>
-              </span>
             </div>
           </div>
           <Switch>
+          <Route exact path="/" render={() => <Redirect to="/about" />} />
             <Route path="/about" component={About} />
             <Route path="/project" component={Project} />
             <Route path="/connect" component={Connect} />

@@ -11,7 +11,7 @@
 	font-size: 50pt;
 }
 
-#project-container .box:nth-child(1n+2) {
+#project-container #box-wrapper:nth-child(1n+2) {
 	margin-top: 5%;
 }
 
@@ -27,14 +27,93 @@
 	width: 10%;
 } */
 
+.project-info-01 {
+margin-left: 33%;
+margin-top: 50px;
+color: black;
+position: absolute;
+text-transform: uppercase;
+width: 120px;
+overflow: wrap;
+}
+
+.project-info-01 p{
+font-size: 1em;
+text-transform: none;
+margin-bottom: 0;
+font-weight: 200;
+}
+
+.project-info-01 a {
+	margin: 0;
+	font-size: .85em;
+}
+.project-info-01 a:hover{
+	text-decoration: underline;
+	color: white;
+}
+
+
+.project-info-02 {
+margin-left: 33%;
+margin-top: 130px;
+color: black;
+position: absolute;
+text-transform: uppercase;
+width: 120px;
+overflow: wrap;
+}
+.project-info-02 p{
+	font-size: 1em;
+	text-transform: none;
+	margin-bottom: 0;
+	font-weight: 200;
+	}
+	
+.project-info-02 a {
+	margin: 0;
+	font-size: .85em;
+}
+.project-info-02 a:hover{
+	text-decoration: underline;
+	color: white;
+}
+	
+
+.project-info-03 {
+	margin-left: 33%;
+	margin-top: 130px;
+	color: black;
+	position: absolute;
+	text-transform: uppercase;
+	width: 120px;
+	overflow: wrap;
+	}
+.project-info-03 p{
+	font-size: 1em;
+	text-transform: none;
+	margin-bottom: 0;
+	font-weight: 200;
+	}
+	
+.project-info-03 a {
+	margin: 0;
+	font-size: .85em;
+}
+.project-info-03 a:hover{
+	text-decoration: underline;
+	color: white;
+}
+#box-wrapper {
+	background-color: rgb(235,235,235);
+	width: 100%;
+	height: 100%;
+}
 
 .box {
 	margin-left: 40%;
-  	width: 50%;
-	height: 100%;
 	padding: 50px;
-	border-radius: 10px;
-	background-color: rgb(235,235,235);
+	/* border-radius: 10px; */
 }
 
 #project-number {
