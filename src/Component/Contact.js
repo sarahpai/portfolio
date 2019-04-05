@@ -1,10 +1,10 @@
 import React from 'react';
-import { FormGroup } from 'semantic-ui-react';
+// import { FormGroup } from 'semantic-ui-react';
 
 function Contact(props) {
 	return (
 		<>
-			<section>
+			<section className="form">
 			<span>Connect with me!</span>
 				<form action="mailto:pai.sarah89@gmail.com" method="post" enctype="text/plain">
 				<label>Your name:</label>

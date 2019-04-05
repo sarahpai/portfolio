@@ -1,6 +1,12 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 }
+
+@font-face {
+	font-family: "BebasNeue-Bold";
+	src: url('../font/BebasNeue-Bold.otf');
+}
+
 /* 
 article {
 	padding-top: 50px;

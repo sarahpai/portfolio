@@ -17,18 +17,16 @@ a {
 	margin-left: 10px;
 	font-size: .75rem;
 }
-.menu {
-	position: sticky;
-}
 
 #title {
-	margin-top: 25vh;
-	font-size: 3rem;
+	margin-top: 20vh;
+	font-size: 60pt;
 	text-transform: uppercase;
 	letter-spacing: 10px; 
+	font-family: "BebasNeue-Bold";
 }
 
-hr {
+#underline {
 	border: solid #000 3px;
 	width: 25%;
 	border-bottom: none;
@@ -48,17 +46,24 @@ hr {
 
 
 @keyframes head {
-	0% {font-size:100%; opacity:1; content: "Full stack developer 👩🏻‍💻" }
-	10% {font-size:100%; opacity:1; content: "Graphic Designer 👩🏻‍🎨" }
-	20% {font-size:100%; opacity:1; content: "Entrepreneur 🦸🏻‍♀️" }
-    30% {font-size:100%; opacity:1; content: "Crafter 👩🏻‍🏭"}
-    40% {font-size:100%; opacity:1; content: "Wannabe Chef 👩🏻‍🍳"}
-    50% {font-size:100%; opacity:1; content: "Party planner 🎉"}
-    60% {font-size:100%; opacity:1; content: "Doggy lover 🐶"}
-    70% {font-size:100%; opacity:1; content: "Taco Lover 🌮"}
-    80% {font-size:100%; opacity:1; content: "Meme creator 🧞‍♀️"}
-    90% {font-size:100%; opacity:1; content: "Summer lovin` gal ☀️"}
+	0% {font-size:100%; opacity:1; content: "a full stack developer 👩🏻‍💻" }
+	10% {font-size:100%; opacity:1; content: "a graphic Designer 👩🏻‍🎨" }
+	20% {font-size:100%; opacity:1; content: "an entrepreneur 🦸🏻‍♀️" }
+    30% {font-size:100%; opacity:1; content: "a crafter 👩🏻‍🏭"}
+    40% {font-size:100%; opacity:1; content: "a wannabe Chef 👩🏻‍🍳"}
+    50% {font-size:100%; opacity:1; content: "a party planner 🎉"}
+    60% {font-size:100%; opacity:1; content: "a doggy lover 🐶"}
+    70% {font-size:100%; opacity:1; content: "a taco lover 🌮"}
+    80% {font-size:100%; opacity:1; content: "a meme creator 🧞‍♀️"}
+    90% {font-size:100%; opacity:1; content: "a summer lovin` gal ☀️"}
     100% {font-size:100%; opacity:1; content: "Sarah Pai"}
+}
+
+.menu {
+	font-size: 1em;
+	font-weight: 300;
+	top: 80vh;
+	position: relative;
 }
 
 /* Footer */
@@ -69,12 +74,14 @@ hr {
 
 #footer {
 	background-color: rgb(234,172,171);
-	
-	position: absolute;
-	width: 100%;
-	padding: 10px;
-	top: 94%;
+	position: fixed;
+	width: 30%;
+	/* padding: 10px; */
+	bottom: 0;
+	left: 0;
+	padding: 3%;
 }
+
 /* Mobile menu bar */
 #hamburger {
 	border: solid #000 3px;

@@ -1,39 +1,44 @@
 import React from 'react'
 import '../assets/css/navbar.css'
-import about from './About'
-import landing from './Landing'
-import contact from './Contact'
-import project from './Project'
+import { BrowserRouter as Router, Route, Link, Switch, } from 'react-router-dom';
+
+import About from './About'
+import Landing from './Landing'
+import Contact from './Contact'
+import Project from './Project'
 class NavBar extends React.Component {
 
 	state = {
-		activeItem: 'about'
+		activeItem: 'about',
+		
 	}
 
-	componentDidMount() {
-		return({landing})
-	}
+	
 
 	handleItemClick = (event) => {
+		event.preventDefault();
 		console.log("clicked", event.target.name);
 		// let clickedLink;
 		switch (event.target.name) {
 			case "about":
-				return (<about/>)
-				break;
+				console.log("yes")
+				return (
+					<About />
+				)
+				// break;
 			case "work":
-				return (<project/>)
-				break;
+				return (<Project/>)
+				// break;
 			case "contact":
-				return (<contact/>)
-				break;
+				return (<Contact/>)
+				// break;
 			default:
-				return (<landing/>)
-				break;
+				return (<Landing/>)
+				// break;
 		}
 	}
 
-  
+	
 
 	render() {
 		 const { activeItem } = this.state
@@ -48,11 +53,16 @@ class NavBar extends React.Component {
 						<p>Menu</p>
 					</div>
 
-					<span className="menu"><a onClick={(event)=> this.handleItemClick(event)} name="about">About</a></span> 
-					<span className="menu"><a onClick={(event) => this.handleItemClick(event)} name="work">Work</a></span> 
-					<span className="menu"><a onClick={(event) => this.handleItemClick(event)} name="contact">Contact</a></span> 
+					<Link to={"/about"} className="menu"> About </Link>
+					<Link to={"/project"} className="menu"> Project </Link>
+					<Link to={"/connect"} className="menu"> Connect </Link>
+
+					
+					{/* <span className="menu"><a onClick={(event)=> this.handleItemClick(event)} name="about">About</a></span>  */}
+					{/* <span className="menu"><a onClick={(event) => this.handleItemClick(event)} name="work">Work</a></span>  */}
+					{/* <span className="menu"><a onClick={(event) => this.handleItemClick(event)} name="connect">Connect</a></span>  */}
 					<h1 id="title">Hello!</h1>
-					<h3>I'm a</h3>
+					<h3>I'm</h3>
 					<span id="who-i-am"> </span>
 					<hr></hr>
 				
