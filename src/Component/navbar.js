@@ -1,17 +1,42 @@
 import React from 'react'
 import '../assets/css/navbar.css'
-// import about from './About'
-// import landing from './Landing'
-// import contact from './Contact'
-// import project from './Project'
+import about from './About'
+import landing from './Landing'
+import contact from './Contact'
+import project from './Project'
 class NavBar extends React.Component {
 
-	// state = { activeItem: 'about' }
+	state = {
+		activeItem: 'about'
+	}
 
-	// handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+	componentDidMount() {
+		return({landing})
+	}
+
+	handleItemClick = (event) => {
+		console.log("clicked", event.target.name);
+		// let clickedLink;
+		switch (event.target.name) {
+			case "about":
+				return (<about/>)
+				break;
+			case "work":
+				return (<project/>)
+				break;
+			case "contact":
+				return (<contact/>)
+				break;
+			default:
+				return (<landing/>)
+				break;
+		}
+	}
+
   
+
 	render() {
-		//  const { activeItem } = this.state
+		 const { activeItem } = this.state
 
 		return (
 			<>
@@ -23,9 +48,9 @@ class NavBar extends React.Component {
 						<p>Menu</p>
 					</div>
 
-					<span className="menu"><a href="#">About</a></span> 
-					<span className="menu"><a href="https://www.paisarah.com/project">Work</a></span> 
-					<span className="menu"><a href="https://www.paisarah.com/project">Contact</a></span> 
+					<span className="menu"><a onClick={(event)=> this.handleItemClick(event)} name="about">About</a></span> 
+					<span className="menu"><a onClick={(event) => this.handleItemClick(event)} name="work">Work</a></span> 
+					<span className="menu"><a onClick={(event) => this.handleItemClick(event)} name="contact">Contact</a></span> 
 					<h1 id="title">Hello!</h1>
 					<h3>I'm a</h3>
 					<span id="who-i-am"> </span>
@@ -34,16 +59,14 @@ class NavBar extends React.Component {
 					<div id="footer">
 						<span>
 						<a href="www.linkedin.com/in/sarahpai">
-							<i className="fab fa-linkedin-in fa-2x"></i>
+							<i id="social-media" className="fab fa-linkedin-in fa-2x"></i>
 						</a>
 						<a href="www.medium.com/paisarah89">
-							<i class="fab fa-medium-m fa-2x"></i>
+							<i id="social-media" class="fab fa-medium-m fa-2x"></i>
 						</a>
 						<a href="www.github.com/sarahpai">
-					    	<i class="fab fa-github fa-2x"></i>
+					    	<i id="social-media" class="fab fa-github fa-2x"></i>
 						</a>
-
-
 						</span>
 					</div>
 				</div>

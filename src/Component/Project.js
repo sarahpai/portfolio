@@ -50,7 +50,6 @@ const handleClick = (event) => {
 			case "youtube":
 				return (
 					<>
-					
 					<p id="header">YOUTUBE KARAOKE </p>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/WXLtqoH3BVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</>
@@ -77,20 +76,14 @@ const Project = (props) => {
 
 		return (
 			<>
-					<div id="myModal" className="modal">
-					{/* <!-- Modal content --> */}
-					<div className="modal-content">
-					<span className="close">&times;</span>
-					</div>
-
-					</div>
+					
 				{/* <!-- Container (Portfolio Section) --> */}
-			<div className="w3-content w3-container w3-padding-64" id="portfolio">
+			{/* <div className="w3-content w3-container w3-padding-24" id="portfolio">
 			<span id="header" className="w3-center">Technical Projects</span>
-			<p className="w3-center"><em>Click on the images to make them bigger</em></p><br></br>
+			<p className="w3-center"><em>Click on the images to make them bigger</em></p><br></br> */}
 
 				{/* <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) --> */}
-			<div className="w3-row-padding w3-center">
+			{/* <div className="w3-row-padding w3-center">
 					<div className="w3-col m3">
 						<img src={youtube} style={{ width: "100%" }} onClick={(e)=>handleClick(e)} className="w3-hover-opacity" name="youtube" alt="Youtube"></img>
 						<p>youtube</p>
@@ -104,13 +97,13 @@ const Project = (props) => {
 					<div className="w3-col m3">
 						<img src={yelpntable} style={{width: "100%"}} onClick={(e)=>handleClick(e)} className="w3-hover-opacity" name="yelpntable" alt="YelpNtable"></img>
 						<p>yelpntable</p>
-					</div>
+					</div> */}
 
-					<div className="w3-col m3">
+					{/* <div className="w3-col m3">
 					<img src={youtube} style={{width: "100%"}} onClick={(e)=>handleClick(e)} className="w3-hover-opacity" alt="Extra"></img>
-					</div>
-				</div>
-			</div>
+					</div> */}
+				{/* </div> */}
+			{/* </div> */}
 
 		
 				{/* <section className="box">
@@ -119,29 +112,31 @@ const Project = (props) => {
 					<div id="right"><p id="title">Graphic</p></div>
 					<div id="middle"><p id="title">Fashion</p></div>
 				</section> */}
-				{/* <section className="box">
-					<span id="title">My works</span>
+				<section className="box">
+					<span className="header">Portfolio</span>
 					<hr></hr>
-					<p id="header">REACT BOOTH APP</p>
+					<p className="project-name">REACT BOOTH APP</p>
+					{/* <img src={reactbooth} style={{width: "100%"}} onClick={(e)=>handleClick(e)} className="w3-hover-opacity" name="reactbooth" alt="React booth"></img> */}
 					<iframe width={560} height={315} src="https://www.youtube.com/embed/LEpe4KuZbeA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<a href="">GITHUB</a>
+					<a href="">GITHUB</a>
 				</section>
 
-		
-					<hr></hr>
+					
 				<section className="box">
-					<p id="header">YOUTUBE KARAOKE </p>
+					<p className="project-name">YOUTUBE KARAOKE </p>
+					{/* <img src={youtube} style={{ width: "100%" }} onClick={(e)=>handleClick(e)} className="w3-hover-opacity" name="youtube" alt="Youtube"></img> */}
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/WXLtqoH3BVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<a href="">GITHUB</a>
 				</section>
 
 		
-					<hr></hr>
+					
 				<section className="box">
-					<p id="header">YELPnTABLE</p>
+					<p className="project-name">YELPnTABLE</p>
+					{/* <img src={yelpntable} style={{width: "100%"}} onClick={(e)=>handleClick(e)} className="w3-hover-opacity" name="yelpntable" alt="YelpNtable"></img> */}
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/O967-J5qUl4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<a href="">GITHUB</a>
-				</section> */}
+				</section>
 			</>
 
 		)

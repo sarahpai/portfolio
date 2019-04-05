@@ -13,10 +13,10 @@ class App extends Component {
     return (
             <React.Fragment>
               <NavBar /> 
-              <Landing />
-              <About />
+              {/* <Landing /> */}
+              {/* <About /> */}
               <Project />
-              <Contact /> 
+              {/* <Contact />  */}
             </React.Fragment>
 
 

@@ -1,16 +1,24 @@
+
+
 .box {
-	margin: 0 auto;
-    width: 75%;
-	max-width: 1600px;
-	text-align: center;
+	margin-left: 40%;
+	margin-top: 5%;
+  width: 50%;
 	height: 100%;
 }
 
-#title {
+.header {
+	font-size: 4rem;
+}
+
+.box hr {
+ width: 32%;
+ margin: 0;
+}
+
+.project-name {
 	font-size: 2rem;
-	/* margin-bottom: 0.625em; */
-	text-transform: uppercase;
-	text-justify: auto;
+	padding: 40px 0px 0px 0px;
 }
 
 #left{

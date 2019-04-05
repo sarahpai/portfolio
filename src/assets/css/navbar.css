@@ -1,10 +1,10 @@
 .navbar {
-	width: 500px;
+	width: 30%;
 	height: 100vh;
 	background-color: rgb(255,239,239);
 	text-align: center;
-	position: relative;
-
+	position: fixed;
+	top: 0;
 }
 
 p{
@@ -23,9 +23,12 @@ a {
 
 #title {
 	margin-top: 25vh;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 10px; 
 }
 
- hr {
+hr {
 	border: solid #000 3px;
 	width: 25%;
 	border-bottom: none;
@@ -43,6 +46,7 @@ a {
 	animation-iteration-count: infinite; */
 }
 
+
 @keyframes head {
 	0% {font-size:100%; opacity:1; content: "Full stack developer 👩🏻‍💻" }
 	10% {font-size:100%; opacity:1; content: "Graphic Designer 👩🏻‍🎨" }
@@ -57,12 +61,19 @@ a {
     100% {font-size:100%; opacity:1; content: "Sarah Pai"}
 }
 
+/* Footer */
+
+#social-media {
+	color: white;
+}
+
 #footer {
 	background-color: rgb(234,172,171);
-	color: white;
+	
 	position: absolute;
 	width: 100%;
-	top: 95%;
+	padding: 10px;
+	top: 94%;
 }
 /* Mobile menu bar */
 #hamburger {
