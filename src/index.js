@@ -1,9 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-<<<<<<< HEAD
-// import { Router } from 'react-router-dom'
-=======
->>>>>>> 13ae5989d0534ff6898b1cd157765e759b5fe205
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

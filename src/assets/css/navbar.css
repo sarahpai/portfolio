@@ -1,15 +1,88 @@
 .navbar {
-	text-align: right;
-	padding: 10px;
+	width: 500px;
+	height: 100vh;
+	background-color: rgb(255,239,239);
+	text-align: center;
+	position: relative;
+
 }
 
+p{
+font-size: .75rem;	
+}
+
+a {
+	text-decoration: none;
+	color: rgb(59,59,59);
+	margin-left: 10px;
+	font-size: .75rem;
+}
 .menu {
-	padding-left: 10px;
+	position: sticky;
 }
 
-.toolbar {
-	position: fixed;
+#title {
+	margin-top: 25vh;
+}
 
+ hr {
+	border: solid #000 3px;
+	width: 25%;
+	border-bottom: none;
+	margin: 10px auto;
+	/* margin-top: 0px; */
+	/* display: inline-flex; */
+}
+
+#who-i-am:after {
+	content: '';
+	font-size: 100%;
+	animation: head 20s linear infinite;
+	/* animation-name: head;
+	animation-duration: 4s;
+	animation-iteration-count: infinite; */
+}
+
+@keyframes head {
+	0% {font-size:100%; opacity:1; content: "Full stack developer 👩🏻‍💻" }
+	10% {font-size:100%; opacity:1; content: "Graphic Designer 👩🏻‍🎨" }
+	20% {font-size:100%; opacity:1; content: "Entrepreneur 🦸🏻‍♀️" }
+    30% {font-size:100%; opacity:1; content: "Crafter 👩🏻‍🏭"}
+    40% {font-size:100%; opacity:1; content: "Wannabe Chef 👩🏻‍🍳"}
+    50% {font-size:100%; opacity:1; content: "Party planner 🎉"}
+    60% {font-size:100%; opacity:1; content: "Doggy lover 🐶"}
+    70% {font-size:100%; opacity:1; content: "Taco Lover 🌮"}
+    80% {font-size:100%; opacity:1; content: "Meme creator 🧞‍♀️"}
+    90% {font-size:100%; opacity:1; content: "Summer lovin` gal ☀️"}
+    100% {font-size:100%; opacity:1; content: "Sarah Pai"}
+}
+
+#footer {
+	background-color: rgb(234,172,171);
+	color: white;
+	position: absolute;
 	width: 100%;
+	top: 95%;
+}
+/* Mobile menu bar */
+#hamburger {
+	border: solid #000 3px;
+	width: 4%;
+	border-bottom: none;
+	margin: 2px;
+}
 
+#hamburger:nth-child(2){
+	width: 2%;
+}
+
+#menu-mobile {
+
+}
+
+/* Desktop menu */
+@media screen and (min-width: 700px) {
+	#menu-mobile {
+		display: none;
+	}
 }
