@@ -12,17 +12,17 @@ function Contact(props) {
 			</section>
 			
 				<article id="location">
-				<i class="fas fa-map-marker-alt"></i>
+				<i className="fas fa-map-marker-alt"></i>
 				<h6>Location</h6>
 				<p>New Jersey • New York</p>
 				</article>
 				<article id="email">
-				<i class="fas fa-envelope"></i>
+				<i className="fas fa-envelope"></i>
 				<h6>Email</h6>
 				<p>pai.sarah89@gmail.com</p>
 				</article>
 				<article id="resume">
-				<i class="far fa-file"></i>
+				<i className="far fa-file"></i>
 				<h6>Resume</h6>
 				<a id="csv" href="https://uploads-learn.s3.amazonaws.com/uploads/resume/5c4b980f-78fa-4e19-bf05-6fb2650c9a24/Sarah_Pai_Resume.pdf" target="_blank">Download</a>
 				</article>
@@ -36,10 +36,10 @@ function Contact(props) {
                   <i id="social-media" className="fab fa-linkedin-in fa-2x"></i>
                 </a>
                 <a href="https://medium.com/@pai.sarah89" target="_blank">
-                  <i id="social-media" class="fab fa-medium-m fa-2x"></i>
+                  <i id="social-media" className="fab fa-medium-m fa-2x"></i>
                 </a>
                 <a href="https://www.github.com/sarahpai" target="_blank">
-                  <i id="social-media" class="fab fa-github fa-2x"></i>
+                  <i id="social-media" className="fab fa-github fa-2x"></i>
 				</a>
 				</article>
 		</>	
