@@ -104,7 +104,7 @@ class App extends Component {
             </ul>
             <div id="footer" />
           </ul> */}
-          <Project />
+          <About />
           {/* <div className="navbar">
           <Link to={"/about"} className="menu"> About </Link>
             <Link to={"/project"} className="menu"> Project </Link>
